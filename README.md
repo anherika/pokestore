@@ -26,10 +26,12 @@ Puedes probar la aplicación directamente aquí:
 
 ## 📂 Estructura del proyecto
 
+```
 src/
 ├── components/
 │ ├── NavBar.jsx
 │ ├── CartWidget.jsx
+│ ├── Contacto.jsx
 │ ├── ItemListContainer.jsx
 │ ├── ItemList.jsx
 │ ├── Item.jsx
@@ -41,6 +43,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```
 
 ---
 
@@ -63,19 +66,21 @@ src/
 
 2. Instalar dependencias
 
-````bash
+
+ ```bash
 npm install
    ```
 
 3. Correr el proyecto:
-```bash
+
+ ```bash
 npm run dev
    ```
 
 
 ---
 
-🛍️ Productos disponibles
+## 🛍️ Productos disponibles
 
 Ejemplo de lo que encontrarás en la tiendita:
 
@@ -92,10 +97,9 @@ Sombrero Snorlax 💤
 ...y más sorpresitas kawaii uwu 💖
 
 
-🌟 Créditos
+## 🌟 Créditos
 
 Proyecto hecho con mucho amor ✨
 Estudiante: Angelica Tenorio Vazquez
 
 Para Coder House
-````
