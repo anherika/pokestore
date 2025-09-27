@@ -5,6 +5,13 @@ Este proyecto fue hecho con **React + React Router** como parte de la entrega _N
 
 ---
 
+## 🚀 Demo en línea
+
+Puedes probar la aplicación directamente aquí:
+[**PokéStore en GitHub Pages**](https://anherika.github.io/pokestore/)
+
+---
+
 ## 🚀 Funcionalidades
 
 - 🏠 Vista de catálogo completo con todos los productos.
@@ -58,10 +65,12 @@ src/
 
 ````bash
 npm install
+   ```
 
 3. Correr el proyecto:
 ```bash
 npm run dev
+   ```
 
 
 ---
