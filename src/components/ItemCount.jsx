@@ -8,7 +8,7 @@ const ItemCount = () => {
 			<button onClick={() => setCount(count - 1)} disabled={count <= 1}>
 				➖
 			</button>
-			<span style={{ margin: "0 1rem", fontWeight: "bold" }}>{count} owo</span>
+			<span style={{ margin: "0 1rem", fontWeight: "bold" }}>{count} Poke-item</span>
 			<button onClick={() => setCount(count + 1)}>➕</button>
 			<button
 				style={{

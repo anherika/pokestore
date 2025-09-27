@@ -12,9 +12,9 @@ const ItemDetail = ({ product }) => {
 			}}
 		>
 			<h2 style={{ color: "#db2777" }}>{product.name} ✨</h2>
-			<p style={{ fontSize: "1.2rem" }}>💖 Precio: ${product.price} uwu</p>
+			<p style={{ fontSize: "1.2rem" }}>Precio: ${product.price}</p>
 			<p style={{ fontSize: "0.9rem", color: "#6b7280" }}>
-				(haz click en agregar si quieres atraparlo ewe)
+				¡Haz click en agregar si quieres atraparlo!
 			</p>
 			<ItemCount />
 		</div>

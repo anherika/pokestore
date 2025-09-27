@@ -5,7 +5,7 @@ const NavBar = () => {
 	return (
 		<header
 			className="navbar"
-			style={{ background: "#ffe4f1", padding: "0.5rem" }}
+			style={{ background: "#f5f5f5", padding: "0.5rem" }}
 		>
 			<div className="left">
 				<Link
@@ -19,7 +19,7 @@ const NavBar = () => {
 						style={{ width: 40, height: 40, objectFit: "contain" }}
 					/>
 					<span style={{ fontWeight: "bold", marginLeft: "0.5rem" }}>
-						🌸 PokeSearcher Store uwu 🌸
+						🌸 PokeSearcher - Tienda 🌸
 					</span>
 				</Link>
 			</div>
@@ -30,16 +30,16 @@ const NavBar = () => {
 					style={{ display: "flex", listStyle: "none", gap: "1rem" }}
 				>
 					<li>
-						<Link to="/">🏠 Inicio</Link>
+						<Link to="/">Inicio</Link>
 					</li>
 					<li>
-						<Link to="/category/ropa">👕 Ropita owo</Link>
+						<Link to="/category/ropa">Ropa</Link>
 					</li>
 					<li>
-						<Link to="/category/accesorios">🎒 Accesorios uwu</Link>
+						<Link to="/category/accesorios">Poke accesorios</Link>
 					</li>
 					<li>
-						<Link to="/contacto">💌 Contactito ewe</Link>
+						<Link to="/contacto">Contacto</Link>
 					</li>
 				</ul>
 			</nav>

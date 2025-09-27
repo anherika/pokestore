@@ -12,7 +12,7 @@ const Item = ({ product }) => {
 			}}
 		>
 			<h3 style={{ color: "#db2777" }}>{product.name} ✨</h3>
-			<p style={{ fontWeight: "bold" }}>💖 Precio: ${product.price}</p>
+			<p style={{ fontWeight: "bold" }}>Precio: ${product.price}</p>
 			<Link
 				to={`/item/${product.id}`}
 				style={{
@@ -25,7 +25,7 @@ const Item = ({ product }) => {
 					textDecoration: "none",
 				}}
 			>
-				Ver detalle owo ✨
+				Ver detalle ✨
 			</Link>
 		</div>
 	);
