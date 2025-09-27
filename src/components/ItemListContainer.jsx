@@ -1,16 +1,25 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getProducts, getProductsByCategory } from "../data/products";
+import ItemList from "./ItemList";
+
 const ItemListContainer = ({ greeting }) => {
-  return (
-    <section style={styles.section}>
-      <h1 style={styles.h1}>{greeting}</h1>
-      <p style={styles.p}>Hola pronto podrás ver el catálogo de cartas aqui n_n</p>
-    </section>
-  )
-}
+	const [items, setItems] = useState([]);
+	const { categoryId } = useParams();
 
-const styles = {
-  section: { padding: "2rem", textAlign: "center" },
-  h1: { margin: 0, fontSize: "1.5rem" },
-  p: { marginTop: "0.5rem", color: "#666" }
-}
+	useEffect(() => {
+		const fetchData = categoryId
+			? getProductsByCategory(categoryId)
+			: getProducts();
+		fetchData.then((res) => setItems(res));
+	}, [categoryId]);
 
-export default ItemListContainer
+	return (
+		<section style={{ padding: "2rem" }}>
+			<h1>{greeting}</h1>
+			<ItemList items={items} />
+		</section>
+	);
+};
+
+export default ItemListContainer;
